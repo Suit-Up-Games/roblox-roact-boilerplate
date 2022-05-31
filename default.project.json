@@ -1,0 +1,73 @@
+{
+  "name": "roblox-roact-boilerplate",
+  "tree": {
+    "$className": "DataModel",
+    "HttpService": {
+      "$className": "HttpService",
+      "$properties": {
+        "HttpEnabled": true
+      }
+    },
+    "Lighting": {
+      "$className": "Lighting",
+      "$properties": {
+        "Brightness": 2.0,
+        "Technology": "Voxel",
+        "GlobalShadows": true,
+        "Outlines": false,
+        "Ambient": [0.0, 0.0, 0.0]
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "Source": {
+          "$path": "src/clientSetup"
+        }
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Server": {
+        "$path": "src/server"
+      }
+    },
+    "ReplicatedFirst": {
+      "$className": "ReplicatedFirst",
+      "Loader": {
+        "$path": "src/loader"
+      }
+    },
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Client": {
+        "$path": "src/client"
+      },
+      "Shared": {
+        "$path": "src/shared"
+      },
+      "Roact": {
+        "$path": "modules/Roact/src"
+      },
+      "Events": {
+        "$className": "Folder",
+        "OnJoin": {
+          "$className": "RemoteEvent"
+        },
+        "OnLeave": {
+          "$className": "RemoteEvent"
+        },
+        "OnScore": {
+          "$className": "RemoteEvent"
+        }
+      }
+    },
+    "SoundService": {
+      "$className": "SoundService",
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    }
+  }
+}

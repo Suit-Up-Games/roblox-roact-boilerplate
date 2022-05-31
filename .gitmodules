@@ -1,0 +1,6 @@
+[submodule "modules/roact"]
+	path = modules/roact
+	url = git@github.com:Roblox/roact.git
+[submodule "modules/testez"]
+	path = modules/testez
+	url = git@github.com:Roblox/testez.git
